@@ -1,15 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 // アノーテーション：型指定
-const name: string = "hoge" // 文字列リテラル
+const name: string = 'hoge' // 文字列リテラル
 const item: number = 12
 
+console.log(name)
+
+
 function App() {
-  return (<div className="App">
-    <div>{name}を{item}こ</div>
-  </div>);
+  return (
+    <div>
+      <div>
+        {name},{item}
+      </div>
+    </div>
+  )
 }
 
 export default App;
