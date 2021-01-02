@@ -10,8 +10,11 @@ interface NAME {
   first: string;
   last: string | null;
 }
-
 let nameObj: NAME = { first: 'yamashita', last: null }
+
+const func1 = (x: number, y: number): number => {
+  return x + y
+}
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
           <li>真偽：{bool}</li>
           <li>配列：{arr1[1]}</li>
           <li>名前：{nameObj.first}</li>
+          <li>Func1: {func1}</li>
         </ul>
       </div>
     </div>
